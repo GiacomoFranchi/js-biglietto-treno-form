@@ -7,7 +7,28 @@
     <title>Biglietteria Elettronica</title>
 </head>
 <body>
-    
+    <section class="ask">
+        <h1>Calcola Prezzo Biglietto </h1>
+        <div class="ask-box">
+            <label for="km-viaggio">Quanti km devi percorrere?</label>
+            <input type="text" id="km-viaggio">
+            <label for="eta">età</label>
+            <select id="eta">
+                <option value=""></option>
+                <option value="minorenne">Minorenne</option>
+                <option value="under">Under 65</option>
+                <option value="over">Over 65</option>
+            </select>
+        </div>
+        <div>
+            <button id="invia">Invia</button>
+            <button id="annulla">Annulla</button>
+        </div>
+    </section>
+    <section class="biglietto hidden">
+        <h2>Il Tuo Biglietto</h2>
+
+    </section>
     <!--JS-->
     <script src="js/script.js"></script>
 </body>

@@ -15,5 +15,5 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 ## Soluzione
 
 **Raccolta dati:**
-1. Chiedere all'utente quanti km deve percorrere
-2. Chiedere all'utente qual'è la sua età
+1. Prelevare i km di viaggio da input
+2. Prelevare età inserita scelta dall'utente

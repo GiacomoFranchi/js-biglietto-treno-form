@@ -12,13 +12,8 @@
         <div class="ask-box">
             <label for="km-viaggio">Quanti km devi percorrere?</label>
             <input type="text" id="km-viaggio">
-            <label for="eta">età</label>
-            <select id="eta">
-                <option value=""></option>
-                <option value="minorenne">Minorenne</option>
-                <option value="under">Under 65</option>
-                <option value="over">Over 65</option>
-            </select>
+            <label for="eta">età del passeggero?</label>
+            <input type="text" id="eta">
         </div>
         <div>
             <button id="invia">Invia</button>
@@ -26,7 +21,7 @@
         </div>
     </section>
     <section class="biglietto hidden">
-        <h2>Il Tuo Biglietto</h2>
+        <h2>Il Tuo Biglietto costa <span id="prezzoBigliettoSconto"></span> e hai ottenuto uno sconto del <span id="scontoOttenuto"></span></h2>
 
     </section>
     <!--JS-->

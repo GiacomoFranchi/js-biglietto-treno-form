@@ -17,3 +17,12 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 **Raccolta dati:**
 1. Prelevare i km di viaggio da input
 2. Prelevare età inserita scelta dall'utente
+
+**Logica del programma:**
+1. Calcolare il prezzo base del biglietto in base al numero dei km da percorrere
+2. Verificare se l'utente ha diritto allo sconto in base alla sua età
+3. Calcolare l'eventuale sconto da applicare
+4. Preparare il messaggio del risultato
+
+## Output
+ **Stampo il messaggio del risultato**

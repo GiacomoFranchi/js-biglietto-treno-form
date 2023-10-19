@@ -8,20 +8,54 @@
 </head>
 <body>
     <section class="ask">
-        <h1>Calcola Prezzo Biglietto </h1>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO </h1>
         <div class="ask-box">
-            <label for="km-viaggio">Quanti km devi percorrere?</label>
-            <input type="text" id="km-viaggio">
-            <label for="eta">età del passeggero?</label>
-            <input type="text" id="eta">
+          <div class="box-up">
+            <div class="box">
+                <label for="nome">Nome Passeggero</label>
+                <input type="text" id="nome">
+            </div>
+            <div class="box">
+                <label for="km-viaggio">Km da percorrere?</label>
+                <input type="text" id="km-viaggio">
+            </div>
+            <div class="box">
+                <label for="eta">Anni Passeggero</label>
+                <input type="text" id="eta">
+            </div>
+          </div>
+            <div>
+                <button id="invia">Invia</button>
+                <button id="annulla">Annulla</button>
+            </div>
         </div>
-        <div>
-            <button id="invia">Invia</button>
-            <button id="annulla">Annulla</button>
-        </div>
+
     </section>
     <section class="biglietto hidden">
-        <h2>Il Tuo Biglietto costa <span id="prezzoBigliettoSconto"></span> e hai ottenuto uno sconto del <span id="scontoOttenuto"></span></h2>
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="box-biglietto">
+            <h3>DETTAGLIO PASSEGGERO</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME PASSEGGERO</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo Biglietto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="nomeUser"></td>
+                        <td id="scontoOttenuto"></td>
+                        <td id="carrozza"></td>
+                        <td id="codice"></td>
+                        <td id="prezzoBigliettoSconto">&euro;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </section>
     <!--JS-->

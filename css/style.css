@@ -1,7 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, sans-serif;
+}
+
+body{
+    color: white;
+    background-color: palevioletred;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 3rem;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+.ask-box{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: palevioletred;
+}
+.box-up{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid palevioletred;
+    border-radius: 5px;
+}
+
+button{
+    color: palevioletred;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    margin-right: 1.5rem;
+}
+
 .hidden{
     display: none;
 }
 
-.biglietto {
-    background-color: green;
+.box-biglietto {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1rem;
+    color: black;
+}
+
+h3{
+    color: black;
+    text-align: left;
+}
+table{
+    width: 100%;
+    border-top:1px solid gray ;
+    border-bottom: 1px solid gray;
+}
+
+th:first-child, td:first-child{
+    background-color: grey;
+}
+
+#nomeUser{
+    font-weight: bold;
+    font-size: 1.2rem;
 }

@@ -1,12 +1,18 @@
 document.getElementById("invia").addEventListener("click", function(){
     
     //RACCOLTA DATI
+    const nome = document.getElementById("nome");
+    const nomeUser = nome.value;
+
     const km = document.getElementById("km-viaggio");
     const kmViaggio = km.value;
 
     const eta = document.getElementById("eta");
     const etaPass = eta.value;
-    console.log(kmViaggio, etaPass, typeof kmViaggio);
+    console.log(kmViaggio, etaPass, nomeUser, typeof kmViaggio);
+
+    const carrozza = ((Math.random() * 10) +1).toFixed(0);
+    const codice = ((Math.random () *1000) +1).toFixed(0);
 
     //CALCOLO PREZZO
     let prezzoBigliettoBase = (kmViaggio * 0.21);
@@ -15,15 +21,15 @@ document.getElementById("invia").addEventListener("click", function(){
 
     if (etaPass < 18) {
         prezzoBigliettoSconto = (prezzoBigliettoBase - (prezzoBigliettoBase * 0.2)).toFixed(2);
-        scontoOttenuto = "20%"
+        scontoOttenuto = "Biglietto Minori"
         console.log(prezzoBigliettoSconto, scontoOttenuto);
     } else if (etaPass > 65){
         prezzoBigliettoSconto = (prezzoBigliettoBase - (prezzoBigliettoBase * 0.4)).toFixed(2);
-        scontoOttenuto = "40%";
+        scontoOttenuto = "Biglietto Over 65";
         console.log(prezzoBigliettoSconto, scontoOttenuto);
     } else{
         prezzoBigliettoSconto = (prezzoBigliettoBase).toFixed(2)
-        scontoOttenuto = "Nessuno sconto ottenuto"
+        scontoOttenuto = "Biglietto standard"
         console.log(prezzoBigliettoSconto, scontoOttenuto);
     }
 
@@ -31,7 +37,10 @@ document.getElementById("invia").addEventListener("click", function(){
     const biglietto = document.querySelector(".biglietto")
     biglietto.classList.remove("hidden")
 
-    document.getElementById("prezzoBigliettoSconto").innerHTML = prezzoBigliettoSconto;
+    document.getElementById("carrozza").innerHTML = carrozza;
+    document.getElementById("codice").innerHTML = codice;
+    document.getElementById("nomeUser").innerHTML = nomeUser;
+    document.getElementById("prezzoBigliettoSconto").innerHTML += prezzoBigliettoSconto;
     document.getElementById("scontoOttenuto").innerHTML = scontoOttenuto;
     document.getElementById("")
 })
@@ -41,7 +50,14 @@ document.getElementById("annulla").addEventListener('click', function () {
     km.value = "";
 
     const eta = document.getElementById("eta");
-    eta.value = ""
+    eta.value = "";
+
+    const nome = document.getElementById ("nome")
+    nome.value = "";
+
+    const prezzoBigliettoSconto = document.getElementById ("prezzoBigliettoSconto")
+    prezzoBigliettoSconto.value = "";
+    
     const biglietto = document.querySelector(".biglietto")
     biglietto.classList.add("hidden")
 })

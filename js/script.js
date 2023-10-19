@@ -36,3 +36,12 @@ document.getElementById("invia").addEventListener("click", function(){
     document.getElementById("")
 })
 
+document.getElementById("annulla").addEventListener('click', function () {
+    const km = document.getElementById("km-viaggio");
+    km.value = "";
+
+    const eta = document.getElementById("eta");
+    eta.value = ""
+    const biglietto = document.querySelector(".biglietto")
+    biglietto.classList.add("hidden")
+})

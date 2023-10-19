@@ -23,6 +23,8 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 2. Verificare se l'utente ha diritto allo sconto in base alla sua età
 3. Calcolare l'eventuale sconto da applicare
 4. Preparare il messaggio del risultato
+5. Rimuovere input user con click su bottone annulla
 
 ## Output
  **Stampo il messaggio del risultato**
+

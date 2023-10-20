@@ -5,7 +5,7 @@ document.getElementById("invia").addEventListener("click", function(){
     const nomeUser = nome.value;
 
     const km = document.getElementById("km-viaggio");
-    const kmViaggio = km.value;
+    const kmViaggio = parseInt(km.value);
 
     const eta = document.getElementById("eta");
     const etaPass = eta.value;
@@ -40,7 +40,7 @@ document.getElementById("invia").addEventListener("click", function(){
     document.getElementById("carrozza").innerHTML = carrozza;
     document.getElementById("codice").innerHTML = codice;
     document.getElementById("nomeUser").innerHTML = nomeUser;
-    document.getElementById("prezzoBigliettoSconto").innerHTML += prezzoBigliettoSconto;
+    document.getElementById("prezzoBigliettoSconto").innerHTML = prezzoBigliettoSconto;
     document.getElementById("scontoOttenuto").innerHTML = scontoOttenuto;
     document.getElementById("")
 })
@@ -56,7 +56,7 @@ document.getElementById("annulla").addEventListener('click', function () {
     nome.value = "";
 
     const prezzoBigliettoSconto = document.getElementById ("prezzoBigliettoSconto")
-    prezzoBigliettoSconto.value = "";
+    prezzoBigliettoSconto.innerHTML = "";
     
     const biglietto = document.querySelector(".biglietto")
     biglietto.classList.add("hidden")
